@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--Represents html5 version-->
+<html>
+	<head>
+		<!--title of the web page-->
+		<title>Blog</title>
+
+		<!-- meta data consists data of the web page-->
+		<meta name="description" content="This page contains blog on differnt topic.">
+		<meta name="keywords" content="Personal website, blog, research, cv, coursework, Prajun, Prajun Lungeli, Lungeli">
+		<meta name="author" content="Prajun Lungeli">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--link section-->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style2.css"/>
+		<link rel="icon" href="icon/logo.png"/>
+
+		<!--external JavaScript-->
+		<script src="js/script.js"></script>
+
+		<!--internal stylesheet section-->
+		<style>
+			.pannel{
+				font-family:"verdana",sans-serif,helvetica;
+				font-size: 50px;
+				color:black;
+			}
+			.lt{
+				width:30px;
+				height:30px;
+				cursor: pointer;
+				padding:20px;
+			}
+		</style>
+	</head>
+	<body onload="loading()">
+		<!--page loader--->
+		<div id="loader"></div>
+		<!--navigation section-->
+		<nav>
+			<!--navbar section-->
+			<div>
+				<ul class="navbar">
+					<li><a href="index.htm">Home</a></li>
+					<li><a class="active" href="blog.htm">Blog</a></li>
+					<li><a href="portfolio.htm">Portfolio</a></li>
+					<li><a href="research.htm">Research</a></li>
+					<li><a href="contact.htm">Contact</a></li>
+				</ul>	
+			</div>
+		</nav>
+		<section>
+			<!---site logo ----->
+			<picture>
+				<div>
+					<a href="index.htm">
+						<img class="iconsetting" src="icon/logo.png" height="150px" width="165px"/>
+					</a>
+				</div> 	
+			</picture>
+
+			<!----------banner-------------->
+			<div class="banpannel">
+				<img src="image/blogban.png" height="450px" width="100%" />					
+			</div>
+
+			<!-- article section-->
+			<article class="row">
+				<div class="card pannel">
+					Technology and it's imapct in our daily lives.<br>
+					<span style="font-size:10px;font-style:italic;">
+					Author: Prajun Lungeli &nbsp; &nbsp; Posted On:5/7/2019</span>
+					<hr width="100%">
+					<!---blog image--->
+					<img src="image/tech.jpg"/>
+					<span style="font-size:20px;" align="justify">
+						<p>
+							The advance development of the technology has changed our lives. It was invented and was 
+							developed to make our life easier. Now each and every second the technology is changing 
+							and is changing our life. The big achievements in the technology era is the invention of 
+							the robots, which can do all the human stuffs except some. The development and innovation 
+							of the technology has made positively and negatively impacts in our life. However, the 
+							technology has been developing and making the life of human beings easier. 
+						</p>
+						<p>
+							Nowadays, the technology is being used in almost all the sectors like education, health, 
+							communication, banking, transport and many more. In the education sector, the technology 
+							has drastically changed the way of learning and teaching. In the past, the students were 
+							not able to get the required information and knowledge. The schools were to far to approach 
+							for the students, but now the online learning technology has provided all the facilities of 
+							the school to the students who can’t approach to the school. It also provides certifications 
+							to the students after the completion of the online course. 
+						</p>
+						<p>
+							The technology has also played a vital role for the human communication. The development of the 
+							technology and its innovation has connected trillions of the people all around the world through 
+							network. Due to the development of the technology, the people can talk, chat and video conference 
+							by staying at different place. Similarly, the technology has been and will be implemented at 
+							different sector to provide facilities to the human beings.     
+						</p>
+					</span>
+					<table>
+						<tr>
+							<td align="center">
+								<img class="lt" src="icon/like.png" onclick="likes()"><div style="font-size:15px;" id="up"/></div>
+							</td>
+							<td align="center">
+								<img class="lt" src="icon/dislike.png" onclick="dislikes()"><div style="font-size:15px;" id="down"/></div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</article>
+
+			<!--AI article-->
+			<article class="row">
+				<div class="card pannel">
+					AI technology.<br>
+					<span style="font-size:10px;font-style:italic;">
+					Author: Prajun Lungeli &nbsp; &nbsp; Posted On:5/7/2019</span>
+					<hr width="100%">
+					<!---blog image--->
+					<img src="image/ai.jpg" width=100%; height="35%"/>
+					<span style="font-size:20px;" align="justify">
+						<p>
+							The branch of computer science which deals with creation of intelligent machines is known as AI (Artificial Intelligence). It is one of the biggest achievements in computer science. The study and research of AI has been seen almost all around the world where Japan, America, China, UK and Russia have been on the top. It has now become an important part at the technology industry where it is implemented in different sectors. 
+						</p>
+						<p>
+							The core part of AI is Knowledge engineering and machine learning. Without the profound knowledge of core parts, no one can work professionally to build the AI technology. AI technology is the advance technology which has been implemented on all the device nowadays. The best example of AI is robots, which are build todays. The robot is implemented with AI which can mimic the activities of the human beings. As it behaves like human beings, it is now used in different sector like medical sector, educational sector, entertainment sector and many more. 
+						</p>
+						<p>
+							Robots require intelligence to perform different tasks such as object manipulation and navigation. The AI is so advance because of the implementation of advanced logic.      
+						</p>
+					</span>
+					<table>
+						<tr>
+							<td align="center">
+								<img class="lt" src="icon/like.png" onclick="likes_two()"><div style="font-size:15px;" id="up2"/></div>
+							</td>
+							<td align="center">
+								<img class="lt" src="icon/dislike.png" onclick="dislikes_two()"><div style="font-size:15px;" id="down2"/></div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</article>
+		</section>
+		<hr width="100%">
+
+		<!--footer section-contains social icon and copyright-->
+		<footer style="margin-top:2%">
+			<!-------Social site section---------------->
+
+			<div align="center" style="padding-bottom:15px;">
+				<a href="https://www.facebook.com/prajunlungelimagar" target="_blank"><img src="icon\facebook.png" width=30px height="30px"/></a>
+
+				<a href="https://www.instagram.com/prajun_magar/" target="_blank"><img src="icon\instagram.png" width=30px height="30px"/></a>
+
+				<a href="https://www.linkedin.com/in/prajun-lungeli-magar/" target="_blank"><img src="icon\linkdin.png" width=30px height="30px"/></a>
+
+				<a href="https://www.youtube.com/channel/UCJp8k5G-NfAbGJRCiGjEfOg?view_as=subscriber" target="_blank"><img src="icon\youtube.png" width=30px height="30px"/></a>
+
+				<a href="https://twitter.com/prajun123l" target="_blank"><img src="icon\twitter.png" width=30px height="30px"/></a>
+			</div>
+
+			<!-- copyright section-->
+			<div style="font-family:sans-serif,helvetica; color:grey;text-shadow:0px 0px 1px white;text-align:center">
+						&copy 2019 Prajun Lungeli Magar. All Rights Reserved.<br/>
+						<font color="black">Designed By|</font> Prajun
+				</div>
+		</footer>
+
+		<!--page loader javascript-->
+		<script type="text/javascript">
+			var pageloader=document.getElementById('loader');
+			function loading(){
+				pageloader.style.display='none';
+			}
+		</script>
+
+	</body>
+</html>

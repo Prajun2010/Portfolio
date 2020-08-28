@@ -1,0 +1,106 @@
+.banpannel{
+	z-index:-1;
+	position:static;
+	margin-top:5px;
+	left:0;
+}
+
+.pannel{
+	margin-top:75px;
+	margin-left:20px;
+}
+
+.portBanner{
+	height:200px;
+	width:100%;
+}
+
+.imageradius{
+	margin-top:110px;
+	border-radius: 50%;
+	box-shadow: 0px 3px 4px black;
+
+}
+.bannerset{
+	width:90%;
+	height: 550px;
+	margin-bottom:2px;
+	margin-top:0px;
+	margin-left:20px;
+	box-shadow: 0px 1px 4px black;
+}
+
+.fontsytle{
+	margin-top:10px;
+	padding-top:10px;
+	height:295px;
+	border-radius:5px;
+	background-color: rgba(250,248,197,0.7);
+	font-family:verdana;
+	font-size:20px;
+	font-style: bold;
+	color:black;
+	box-shadow: 0px 3px 4px black;
+}
+
+.downloadBtn{
+	margin-top:2px;
+	border-radius:5px;
+	padding:6px;
+	height:50px;
+}
+
+.downloadBtn:hover{
+	background-color:skyblue;
+	box-shadow: 0px 3px 4px black;	
+}
+
+.items{
+	background-color:rgba(220,218,200,0.7);
+	margin-top:10px;
+	margin-left: 20px;
+	border-radius: 5px;
+}
+
+.row{
+	display:flex;
+}
+
+.left{
+	flex:50%;
+}
+.right{
+	flex:50%;
+	padding-left:10px;
+}
+.card2{
+	margin-top:20px;
+	background-color:rgba(250,248,197,0.5);
+	padding:20px;
+	margin-top:20px;
+	border-radius: 5px;
+
+}
+.card{
+	margin:270px;
+	width:57%;
+	background-color:rgba(250,248,197,0.5);
+	margin-top:20px;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:30px;
+	padding-bottom:5px;
+	margin-bottom:2px;
+}
+
+/*image hover*/
+
+.imagehov{
+	transition: transform .2s;
+	box-shadow: 0px 2px 5px black;
+
+	}
+.imagehov:hover{
+	transform:scale(1.1);
+	box-shadow: 0px 0px 5px black;
+	}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>	
+<!--Represents html5 version-->
+<html>
+	<head>
+		<!--title of the web page-->
+		<title>Contact</title>
+
+		<!-- meta data consists data of the web page-->
+		<meta name="description" content="contact page to contact or linked with an author."/>
+		<meta name="keywords" content="Personal website, blog, research, cv, coursework, Prajun, Prajun Lungeli, Lungeli"/>
+		<meta name="author" content="Prajun Lungeli"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<!--link section-->
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="icon" href="icon/logo.png"/>
+		<script src="js/script.js"></script>
+
+		<!--internal css section-->
+		<style>
+			.textbox{
+				font-family:sans-serif,serif,helvetica;
+				font-size:15px;
+				width:400px;
+				height:200px;
+				border-radius:3px;
+				border:1.5px solid grey;
+				padding-left:5px;
+			}
+			.socialfont{
+				font-family:sans-serif,serif;
+			}
+		</style>
+		
+	</head>
+	<body onload="loading()">
+		<!--page loader--->
+		<div id="loader"></div>
+		<!--navigation section-->
+		<nav>
+			<!--navbar section-->
+			<div>
+				<ul class="navbar">
+					<li><a href="index.htm">Home</a></li>
+					<li><a href="blog.htm">Blog</a></li>
+					<li><a href="portfolio.htm">Portfolio</a></li>
+					<li><a href="research.htm">Research</a></li>
+					<li><a class="active" href="contact.htm">Contact</a></li>
+				</ul>	
+			</div>
+		</nav>
+
+		<section>
+			<!--site logo-->
+			<picture>
+				<div>
+					<a href="index.htm">
+						<img class="iconsetting" src="icon/logo.png" height="150px" width="165px"/>
+					</a>
+				</div>
+				<!------banner section------->
+				<div align="center">
+					<img class="bannersetting" src="image/contactbanner.jpg"/>
+				</div>
+			</picture>
+
+			<!---------form section-------->
+			<div>
+				<table class="formtable">
+					<td class="leftside">
+						<div>
+							<span style="color:black;font-family:sans-serif;font-style:bold;font-size:50px;">Contact<hr width=100%;/></span>
+							<form name="message" onsubmit="check()">
+									<!--firstName-->
+									<label class="formfont" for="firstName">First Name</label><br/>
+									<input class="formbox" type="text" name="firstName" placeholder="first name" maxlength="15" />
+								<p>
+									<!--middleName-->
+									<label class="formfont" for="middleName">Middle Name</label><br/>
+									<input class="formbox" type="text" name="middleName" placeholder="middle name" maxlength="15"/>
+								</p>
+								<p>
+									<!--lastName-->
+									<label class="formfont" for="lastName">Last Name</label><br/>
+									<input class="formbox" type="text" name="lastName" placeholder="last name" maxlength="15"/>
+								</p>
+									<!--phone-->
+									<label class="formfont" for="phone">Phone</label><br/>
+									<input class="formbox" type="tel" pattern="[+]{1}[0-9]{3}-[0-9]{10}" name="phone" placeholder="+977-0123456789"/>
+								<p>
+									<!--email-->
+									<label class="formfont" for="email">Email</label><br/>
+									<input class="formbox" type="email" name="email" placeholder="e.g@email.com" maxlength="25"/>
+								</p>
+								<p>
+									<!--gender-->
+									<label class="formfont" for="gender">Gender:</label>
+								</p>
+								<p>
+									<input type="radio" name="gender" value="Male"/>
+									<label class="formfont">Male</label>
+									&nbsp;&nbsp;
+									<input type="radio" name="gender" value="Female"/>
+									<label class="formfont">Female</label>
+									&nbsp;&nbsp;
+									<input type="radio" name="gender" value="Others"/>	
+									<label class="formfont">Others</label>
+								</p>
+								<p style="padding-top:10px;">
+									<!--Text area-->
+									<label class="formfont" for="message">Message</label><br/>
+									<textarea class="textbox" name="message" placeholder="Your message..."></textarea>
+								</p>
+								<p>
+									<!--submit button-->
+									<input type="submit" class="buttonsubmit" value="Send"/>
+								</p>
+							</form>
+						</div>
+					</td>
+					<!--right side contact pannel-->
+					<td>
+						<div class="rightside">
+							<span style="font-family: sans-serif,serif;font-size:40px;color:grey">
+								Other ways to Contact
+							</span>
+							<p style="font-family: sans-serif,serif;font-size:20px;">
+								call, email, join in social sites-waiting for your<br>
+								connections...
+							</p><br/>
+
+							<!--social media logo------->
+							<p class="socialfont">
+								Link With Me<br/>
+								<hr width="90%" align="left">
+								<a href="https://www.facebook.com/prajunlungelimagar" target="_blank"><img src="icon/facebook2.png" 						width=30px height="30px"/></a>
+
+								<a href="https://www.instagram.com/prajun_magar/" target="_blank"><img src="icon/instagram2.png" 							width=30px height="30px"/></a>
+
+								<a href="https://www.linkedin.com/in/prajun-lungeli-magar/" target="_blank"><img src="icon/linkdin2.png" 					width=30px height="30px"/></a>
+
+								<a href="https://twitter.com/prajun123l" target="_blank"><img src="icon/twitter2.png" width=30px height="30px"/></a>
+							</p><br/>
+
+							<!-----Phone number------------>
+							<p class="socialfont">
+								Call Me<br/>
+								<hr width="90%" align="left">
+								<image src="icon/phone.png" width=40px height="40px"/>
+								<span style="font-size:40px;">+977-9861506177</span>
+							</p><br/>
+
+							<!----email----------->
+							<p class="socialfont">
+								Mail Me<br/>
+								<hr width="90%" align="left">
+								<image src="icon/mail.png" width=40px height="40px"/>
+								<span style="font-size:35px;">Prajun2010@gmail.com</span>
+							</p>
+						</div>
+					</td>
+				</table>
+			</div>
+		</section>
+		<!--footer section-contains social icon and copyright-->
+		<footer >
+
+			<!-------map section-------->
+			<div class="mapsection" align="center">
+				<span style="font-family:sans-serif,serif;color:white;font-size:30px;margin-top:0;">- Location -</span>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.176777393808!2d85.33535861506216!3d27.71182768279003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb197477fd04f9%3A0x3edf70f1bb42900a!2sKalopul%2C+Kathmandu+44602!5e0!3m2!1sen!2snp!4v1557030185512!5m2!1sen!2snp" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+
+			<!------for social sites-------->
+			<div >
+				<div align="center" style="padding-bottom:15px;">
+					<a href="https://www.facebook.com/prajunlungelimagar" target="_blank"><img src="icon/facebook.png" width=30px height="30px"/></a>
+
+					<a href="https://www.instagram.com/prajun_magar/" target="_blank"><img src="icon/instagram.png" width=30px height="30px"/></a>
+
+					<a href="https://www.linkedin.com/in/prajun-lungeli-magar/" target="_blank"><img src="icon/linkdin.png" width=30px height="30px"/></a>
+
+					<a href="https://www.youtube.com/channel/UCJp8k5G-NfAbGJRCiGjEfOg?view_as=subscriber" target="_blank"><img src="icon/youtube.png" width=30px height="30px"/></a>
+
+					<a href="https://twitter.com/prajun123l" target="_blank"><img src="icon/twitter.png" width=30px height="30px"/></a>
+				</div>
+
+				<!-- Copyright section-->
+				<div style="font-family:sans-serif,helvetica; color:grey;text-shadow:0px 0px 1px white;text-align:center">
+						&copy 2019 Prajun Lungeli Magar. All Rights Reserved.<br/>
+						<font color="black">Designed By|</font> Prajun
+				</div>
+			</div>
+		</footer>
+				
+		<!--page loader javascript-->
+		<script type="text/javascript">
+			var pageloader=document.getElementById('loader');
+			function loading(){
+				pageloader.style.display='none';
+			}
+		</script>
+	</body>
+</html>	

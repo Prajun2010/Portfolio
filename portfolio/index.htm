@@ -1,0 +1,187 @@
+<!DOCTYPE html>	
+<!--Represents html5 version-->
+<html>
+	<head>
+		<!--title of the web page-->
+		<title>Prajun Lungeli</title>
+
+		<!-- meta data consists data of the web page-->
+		<meta name="description" content="Personal website, contains cv,blog and research of an author. Main page of the author."/>
+		<meta name="keywords" content="Personal website, blog, research, cv, coursework, Prajun, Prajun Lungeli, Lungeli"/>
+		<meta name="author" content="Prajun Lungeli"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<!--link section-->
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="icon" href="icon/logo.png"/>
+		<script src="js/script.js"></script>
+
+		<!--internal stylesheet section-->
+		<style>
+			.f1{
+				margin-top:280px;
+				margin-left:250px;
+				margin-bottom:5px;
+				font-family:arial,sans-serif,serif;
+				color:rgba(20,50,60,0.8);
+				font-size:50px;
+				font-style:bold;
+				text-align:left;
+
+			}
+			.f2{
+				margin-top:5px;
+				margin-left:250px;
+				margin-bottom:50px;
+				font-family:arial,sans-serif,serif;
+				color:grey;
+				font-size:20px;
+				font-style:bold;
+				text-align:left;	
+			}
+
+		</style>
+	</head>
+	<body onload="loading()" class="indeximage">
+		<div id="loader"></div>
+		<!--navigation section-->
+		<nav>
+			<div>
+				<ul class="navbar">
+					<li><a class="active" href="index.htm">Home</a></li>
+					<li><a href="blog.htm">Blog</a></li>
+					<li><a href="portfolio.htm">Portfolio</a></li>
+					<li><a href="research.htm">Research</a></li>
+					<li><a href="contact.htm">Contact</a></li>
+				</ul>	
+			</div>
+		</nav>
+
+		<!--site logo-->
+		<picture>
+			<div>
+				<a href="index.htm">
+					<img class="iconsetting" src="icon/logo.png" height="150px" width="165px"/>
+				</a>
+			</div>
+		</picture>
+		
+		<section>
+			<!--intro-->	
+			<div class="f1">
+				Prajun Lungeli Magar
+			</div>
+			<div class="f2">
+				<span style="color:rgba(60,50,90,1);">Graphic Designer and Coder</span>
+				<hr width=35% align="left">
+			</div>
+
+			<!--about author-->
+			<article>
+				<div class="f2">
+					<p style="padding-bottom:125px;color:rgba(20,50,60,0.9);font-size:19px;font-size: bold;text-shadow:0px 0px 5px white;">
+					Hello!<br>
+					Welcome to my site. I am a designer and a coder who loves coding and designing.<br>
+					In present, I am an IT student at Islington College, where I am learning to code 
+					<br>and develop website and program. In this site you will be exploring what I have<br>
+					designed and programmed for the various project.
+					</p>
+
+					<!--date and time-->
+					<div id="date"></div>
+					<!-- Date and time javascript-->
+					<script>
+						var dDate=new Date();
+						document.getElementById('date').innerHTML=dDate;
+					</script>
+
+				</div>
+			</article>
+
+			<!-- gallery section -->
+			<div class="gallery">
+				<span style="color:grey;font-size:50px;text-shadow: 0px 0px 2px lightgrey;">
+					<center>- Gallery -</center>
+				</span>
+				<div class="gallerycontainer">
+					<div id="gallerybox">
+						<img src=image/one.jpg width="100%" height="600px">
+					</div>
+				</div>
+
+				<!--for video-->
+				<div class="motion">
+					<span style="color:white;font-size:50px;text-shadow:0px 0px 2px lightgrey;">
+						<center>- Video -</center>
+					</span>
+					<div class="motioncontainer">
+						<video class="motionsetting" controls>
+							<source src="video/music.mp4" type="video/mp4">
+						</video></div>
+						<!--footer section-contains social icon and copyright-->
+						<footer class="scale">
+								<div align="center">
+								<a href="https://www.facebook.com/prajunlungelimagar" target="_blank"><img src="icon/facebook.png" width=30px height="30px"/></a>
+
+								<a href="https://www.instagram.com/prajun_magar/" target="_blank"><img src="icon/instagram.png" width=30px height="30px"/></a>
+
+								<a href="https/:/www.linkedin.com/in/prajun-lungeli-magar/" target="_blank"><img src="icon/linkdin.png" width=30px height="30px"/></a>
+
+								<a href="https://www.youtube.com/channel/UCJp8k5G-NfAbGJRCiGjEfOg?view_as=subscriber" target="_blank"><img src="icon/youtube.png" width=30px height="30px"/></a>
+
+								<a href="https://twitter.com/prajun123l" target="_blank"><img src="icon/twitter.png" width=30px height="30px"/></a>
+							</div>
+							<div style="font-family:sans-serif,helvetica; color:grey;text-shadow:0px 1px 2px white;text-align:center;padding-top:10px;">
+								&copy 2019 Prajun Lungeli Magar. All Rights Reserved.<br/>
+								<font color="black">Designed By|</font> Prajun
+							</div>
+						</footer>
+				</div>		
+			</div>
+
+			<!--  buttons for the image slider-->
+			<button class="nextImg" onclick="nextImage()"> Next </button>
+			<button class="prevImg"onclick="backImage()"> Back </button>
+			<br>			
+		</section>
+		
+
+		<!-- javascript page loader-->
+		<script type="text/javascript">
+			var pageloader=document.getElementById('loader');
+			function loading(){
+				pageloader.style.display='none';
+			}
+		</script>
+
+		<!--javascript for image slider-->
+		<script type="text/javascript">
+			var slider=document.getElementById('gallerybox');
+			var image=['one','two','three','four','five','six','seven'];//contains string of the image.
+			var i=image.length;
+
+			//for next image
+			function nextImage(){
+				if(i<image.length){	
+					i+=1;
+				}else{
+					i=1;
+				}
+					slider.innerHTML= "<img src=image/"+image[i-1]+".jpg width=100% height=600px>";
+			}
+
+			//to move back to first image.
+			function backImage(){
+				if(i>image.length+1 && i>1){
+					i-=1;
+				}else{
+					i=image.length;
+				}
+			}
+
+			//interval set to change the image.
+			setInterval(nextImage,2000);
+		</script>
+
+	</body>
+</html>

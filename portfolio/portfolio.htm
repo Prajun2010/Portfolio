@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!--Represents html5 version-->
+<html>
+	<head>
+		<!--title of the web page-->
+		<title>Portfolio</title>
+
+		<!-- meta data consists data of the web page-->
+		<meta name="description" content="Portfolio and Bio-data of an author."/>
+		<meta name="keywords" content="Personal website, blog, research, cv, coursework, Prajun, Prajun Lungeli, Lungeli"/>
+		<meta name="author" content="Prajun Lungeli"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<!--link section-->
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/style2.css"/>
+		<link rel="icon" href="icon/logo.png"/>
+
+		<!--internal css section-->
+		<style>
+			.linkButton{
+				background-color:orange;
+				font-style: bold;
+				color:white;
+				font-family:verdana,serif;
+				margin-top:0px;
+				margin-left:90px; 
+				margin-right:55px;
+				border-radius:5px;
+				padding:20px;
+				box-shadow: 0px 5px 5px grey;
+			}
+			.linkButton:hover{
+				background-color: skyblue;
+				box-shadow: 0px 3px 2px grey;
+			}
+		</style>
+	</head>
+	<body onload="loading()">
+		<!--page loader--->
+		<div id="loader"></div>
+		<!--navigation section-->
+		<nav>
+			<!--navbar section-->
+			<div>
+				<ul class="navbar">
+					<li><a href="index.htm">Home</a></li>
+					<li><a href="blog.htm">Blog</a></li>
+					<li><a class="active" href="portfolio.htm">Portfolio</a></li>
+					<li><a href="research.htm">Research</a></li>
+					<li><a href="contact.htm">Contact</a></li>
+				</ul>	
+			</div>
+		</nav>
+		<section>
+			<picture>
+
+				<!--- site logo -------------->
+				<div>
+					<a href="index.htm">
+						<img class="iconsetting" src="icon/logo.png" height="150px" width="165px"/>
+					</a>
+				</div>
+
+			</picture>
+			<!-- portfolio section-->
+			<div class="pannel">
+				<table class="portBanner">
+					<tr>
+						<td width="15%" align="center">
+							<img class="imageradius" src="image/blog.jpg" height="200px" width="200px"/><br>
+							<div class="fontsytle">
+								   About Me<hr width="50%">
+								   <span style="font-size:12px;">Graphic Designer and coder</span>
+								   <span style="font-size:15px">Student at Islington College</span>
+								   <p>
+								 		CV
+								 		<hr width="50%">
+								 		<a download href="document/cv.pdf" target="_blank">
+								 		<button class="downloadBtn">
+								 			Download CV
+								 		</button>
+								 		</a>
+								   </p>
+							</div>
+						</td>
+						<td>
+							<img class="bannerset" src="image/portfoliobanner.jpg" />
+							<hr width="100%">
+
+							<!-- navigate button-->
+							<a href="#photo"><button class="linkButton">Photography</button></a>
+							<a href="#art"><button class="linkButton">Digital Art</button></a>
+							<a href="#paint"><button class="linkButton">Painting</button></a>
+							<a href="#ach"><button class="linkButton">Achievements</button></a>
+						</td>					
+					</tr>
+				</table>
+			</div>
+			<!--Photography section-->
+			<div class="items">
+				<table width="100%">
+					<tr >
+						<td colspan="4">
+							<a name="photo">
+								<img src="image/photographyBan.jpg" width="100%"/>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td width="25%">
+							<img class="imagehov" src="image/photo2.jpg" height="320px" width="350px"/>
+						</td>
+						<td width="25%">
+							<img class="imagehov" src="image/photo1.jpg" height="320px" width="350px"/>
+						</td>
+						<td width="25%">
+							<img class="imagehov" src="image/photo5.jpg" height="320px" width="350px"/>
+						</td>
+						<td width="25%">
+							<img class="imagehov" src="image/photo3.jpg" height="320px" width="350px"/>
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" colspan="2">
+							<img class="imagehov" style="padding-top:6px;margin-bottom:10px" src="image/photo4.jpg" height="610px" width="98%"/>
+						</td>
+						<td width="50%" colspan="2">
+							<img class="imagehov" style="padding-top:6px;margin-bottom:10px;" src="image/photo6.jpeg" height="610px" width="98%"/>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!--Graphic Design Section-->
+			<div class="items">
+				<table width="100%">
+					<tr >
+						<td colspan="3">
+							<a name="art">
+								<img src="image/digibanner.jpg" width="100%"/>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td width="40%">
+							<img class="imagehov" src="image/digi2.jpg" height="450px" width="580px"/>
+						</td>
+						<td width="30%">
+							<img class="imagehov" src="image/digi4.jpg" height="390px" width="460px"/>
+						</td>
+						<td width="25%">
+							<img class="imagehov" src="image/digi3.jpg" height="395px" width="410px"/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<img class="imagehov" src="image/digi1.jpg" height="650px" width="100%"/>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!--Painting Section-->
+			<div class="items">
+				<table width="100%">
+					<tr >
+						<td colspan="2">
+							<a name="paint">
+								<img src="image/paintingBan.jpg" width="100%"/>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img class="imagehov" style="margin-left:50px;" src="image/paint1.jpg" height="600px" width="90%"/>
+						</td>
+						<td>
+							<img class="imagehov" style="margin-left:40px;" src="image/paint2.jpg" height="600px" width="90%"/>
+						</td>
+					</tr>
+					<tr>
+						<td >
+							<img class="imagehov" style="margin-left:50px; margin-top:15px;margin-bottom:15px" src="image/paint3.jpg" height="630px" width="90%"/>
+						</td>
+						<td >
+							<img class="imagehov" style="margin-left:40px; margin-top:15px;margin-bottom:15px" src="image/paint4.jpg" height="630px" width="90%"/>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!--Achievemnets section-->
+			<div class="items">
+				<table width="100%">
+					<tr >
+						<td colspan="4">
+							<a name="ach">
+								<img src="image/achiev.jpg" width="100%"/>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td width="25%">
+							<img class="imagehov" src="image/ac1.jpg" height="450px" width="350px"/>
+						</td>
+						<td width="25%">
+							<img class="imagehov" src="image/ac2.jpg" height="450px" width="350px"/>
+						</td>
+						<td width="25%">
+							<img class="imagehov" src="image/ac3.jpg" height="450px" width="350px"/>
+						</td>
+						<td width="25%">
+							<img class="imagehov" src="image/ac8.jpg" height="450px" width="350px"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img class="imagehov" src="image/ac4.jpg" height="430px" width="350px"/>
+						</td>
+						<td colspan="2">
+							<img class="imagehov" src="image/ac6.jpg" height="430px" width="718px"/>
+						</td>
+						<td>
+							<img class="imagehov" src="image/ac5.jpg" height="430px" width="350px"/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<img class="imagehov" style="margin-bottom:15px" src="image/ac7.jpg" height="430px" width="718px"/>
+						</td>
+						<td colspan="2">
+							<img class="imagehov" style="margin-bottom:15px" src="image/ac9.jpg" height="430px" width="718px"/>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<hr width="100%">
+		<!--footer section-contains social icon and copyright-->
+		<footer style="margin-top:2%;">
+			<div align="center" style="padding-bottom:15px;">
+				<a href="https://www.facebook.com/prajunlungelimagar" target="_blank"><img src="icon\facebook.png" width=30px height="30px"/></a>
+
+				<a href="https://www.instagram.com/prajun_magar/" target="_blank"><img src="icon\instagram.png" width=30px height="30px"/></a>
+
+				<a href="https://www.linkedin.com/in/prajun-lungeli-magar/" target="_blank"><img src="icon\linkdin.png" width=30px height="30px"/></a>
+
+				<a href="https://www.youtube.com/channel/UCJp8k5G-NfAbGJRCiGjEfOg?view_as=subscriber" target="_blank"><img src="icon\youtube.png" width=30px height="30px"/></a>
+
+				<a href="https://twitter.com/prajun123l" target="_blank"><img src="icon\twitter.png" width=30px height="30px"/></a>
+			</div>
+			<!-- copyright section -->
+			<div style="font-family:sans-serif,helvetica; color:grey;text-shadow:0px 0px 1px white;text-align:center">
+						&copy 2019 Prajun Lungeli Magar. All Rights Reserved.<br/>
+						<font color="black">Designed By|</font> Prajun
+			</div>
+		</footer>
+
+		<!--page loader javascript-->
+		<script type="text/javascript">
+			var pageloader=document.getElementById('loader');
+			function loading(){
+				pageloader.style.display='none';
+			}
+		</script>
+		
+	</body>
+</html>
